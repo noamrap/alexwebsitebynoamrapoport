@@ -1,0 +1,129 @@
+﻿<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../StyleSheet.css" rel="stylesheet" />
+    <title>Navigation bar</title>
+</head>
+<body>
+    <header>
+        <div id="brand"><a href="">ברוכים הבאים לאתר מרפאת השיניים של דוקטור רפופורט אלכס התפריט מצד ימין</a></div>
+        <nav>
+            <ul>
+                <li id="signup"><a href="Odot.html">אודות</a></li>
+                <li id="login"><a href="Contact.html">ייעוץ בווצאפ ורשתות חברתיות</a></li>
+                <li><a href="BeforeAndAfter.html">תוצאות טיפולים לפני ואחרי</a></li>
+                <li><a href="../NETINA.html">טיפולי שיניים בהתנדבות כתרומה לקהילה</a></li>
+                <li><a href="celebAndGoodThings.html">מפורסמים שביקרו במרפאה</a></li>
+            </ul>
+        </nav>
+
+        <style>
+          
+            .header a {
+                color: white;
+            }
+        </style>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li id="signup"><a href="Odot.html">אודות</a></li>
+                <li id="login"><a href="Contact.html">ייעוץ בווצאפ ורשתות חברתיות</a></li>
+                <li><a href="BeforeAndAfter.html">תוצאות טיפולים לפני ואחרי</a></li>
+                <li><a href="../NETINA.html">טיפולי שיניים בהתנדבות כתרומה לקהילה</a></li>
+                <li><a href="celebAndGoodThings.html">מפורסמים שביקרו במרפאה</a></li>
+
+
+
+            </ul>
+        </div>
+    </header>
+ 
+
+    <script src="../JavaScript.js"></script>
+</body>
+</html>
+<style >
+    .banorrrr {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* align content to the top */
+        align-items: flex-start; /* align content to the left */
+        height: 100vh; /* Set container height to fill the viewport */
+        padding: 2rem; /* Add some padding to the container */
+    }
+
+    h1 {
+        margin-bottom: 0.5rem; /* Add some space between h1 and h3 */
+    }
+    li {
+        font-weight: bold;
+    }
+    ul li a {
+        color: #000000; /* black color */
+        font-weight: bold;
+    }
+
+    ul li a {
+        color: #fff; /* set default link color */
+        transition: color 0.3s ease-in-out; /* add smooth color transition */
+    }
+
+        ul li a:hover {
+            color: #ff9900; /* set link color on hover */
+        }
+
+        ul li a:nth-child(2):hover {
+            color: #00ccff;
+        }
+
+        ul li a:nth-child(3):hover {
+            color: #ff6699;
+        }
+
+        ul li a:active {
+            color: #FF9900;
+            text-decoration: none;
+            border-bottom: 2px solid #FF9900;
+        }
+    body {
+        background: linear-gradient(to right, aqua 50%, white 50%), url("https://www.myrehovot.co.il/sites/yavne/UserContent/images/2021/5/ANIMALS/73524693_832888333793328_7307982030619279360_n.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        min-height: 90vh;
+        background-size: initial;
+    }
+       body {
+  background: aqua url("https://www.myrehovot.co.il/sites/yavne/UserContent/images/2021/5/ANIMALS/73524693_832888333793328_7307982030619279360_n.jpg") center no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+}
+    header {
+        background-color: purple;
+    }
+
+    #brand a {
+        color: white;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    #hamburger-icon {
+        color: white;
+    }
+
+    .mobile-menu li a {
+        color: purple;
+    }
+
+
+</style>
